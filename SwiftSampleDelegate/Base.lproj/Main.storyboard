@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YUc-LE-04H">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Receiver-->
+        <scene sceneID="GEv-ER-QaC">
+            <objects>
+                <viewController title="Receiver" id="YUc-LE-04H" customClass="ReceiverViewController" customModule="SwiftSampleDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GFW-Em-H8R"/>
+                        <viewControllerLayoutGuide type="bottom" id="bHt-wi-85G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l68-BA-vFb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzA-Fp-cKx">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <state key="normal" title="move to SenderViewController">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="L4a-xf-zfU" kind="show" identifier="SenderView" id="QLQ-3p-hr5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="hzA-Fp-cKx" secondAttribute="centerY" id="NQQ-0W-rOb"/>
+                            <constraint firstItem="hzA-Fp-cKx" firstAttribute="leading" secondItem="l68-BA-vFb" secondAttribute="leadingMargin" id="PZV-yc-809"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hzA-Fp-cKx" secondAttribute="trailing" id="yNW-IL-8KM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7BI-zp-h8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="1025"/>
+        </scene>
+        <!--Sender-->
+        <scene sceneID="GvL-xz-t3i">
+            <objects>
+                <viewController title="Sender" id="L4a-xf-zfU" customClass="SenderViewController" customModule="SwiftSampleDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G4y-xr-jlb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ghu-6e-WKT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vGH-UF-gbU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zo-ZJ-wae">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <state key="normal" title="go back to ReceiverViewController">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="L4a-xf-zfU" eventType="touchUpInside" id="YmJ-Ss-jkA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Zo-ZJ-wae" secondAttribute="trailing" id="713-Xl-rqu"/>
+                            <constraint firstItem="6Zo-ZJ-wae" firstAttribute="leading" secondItem="vGH-UF-gbU" secondAttribute="leadingMargin" id="Dqk-oP-WYd"/>
+                            <constraint firstAttribute="centerY" secondItem="6Zo-ZJ-wae" secondAttribute="centerY" id="Os8-Qm-FWT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFL-Mr-HVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="1025"/>
+        </scene>
+    </scenes>
+</document>
