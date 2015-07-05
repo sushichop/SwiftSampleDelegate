@@ -22,4 +22,4 @@ sushichop
 
 [MIT]: http://www.opensource.org/licenses/mit-license.php
 
-SwiftampleDelegate is available under the [MIT license][MIT]. See the LICENSE file for details.
+SwiftSampleDelegate is available under the [MIT license][MIT]. See the LICENSE file for details.
